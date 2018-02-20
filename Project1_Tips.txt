@@ -1,0 +1,25 @@
+rm -rf example/schemaless/solr/gettingstarted
+bin/solr start -p 8984 -e schemaless
+bin/post -p 8984 -c IRF16P1 World_News.json 
+ 
+ 
+ <fieldType name="text_ko" class="solr.TextField" positionIncrementGap="100">
+    <analyzer>
+      <tokenizer class="solr.StandardTokenizerFactory"/>
+      <filter class="solr.LowerCaseFilterFactory"/>
+      <filter class="solr.StopFilterFactory" words="lang/stopwords_ko.txt" ignoreCase="true"/>
+    </analyzer>
+  </fieldType>
+
+
+<delete><query>*:*</query></delete>  
+
+ rkAD@1990 
+  
+  
+timberlake.cse.buffalo.edu
+
+junaidsh
+1026last6digits
+
+submit_cse535 project1.txt
